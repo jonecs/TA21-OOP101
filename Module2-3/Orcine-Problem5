@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+
+public class Problem5 {
+    //Orcine, Joneca
+    public static void main(String[] args) {
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.print("Enter brand: ");
+            String brand = scanner.nextLine();
+            
+            System.out.print("Enter model: ");
+            String model = scanner.nextLine();
+            
+            System.out.print("Enter RAM in GB: ");
+            int ram = scanner.nextInt();
+            
+            System.out.print("Enter storage in GB: ");
+            int storage = scanner.nextInt();
+            
+            System.out.print("Enter price: ");
+            double price = scanner.nextDouble();
+            
+            System.out.println("=================================");
+            System.out.println("SMARTPHONE SPECIFICATION RECORD");
+            System.out.println("=================================");
+            System.out.println("Brand: " + brand);
+            System.out.println("Model: " + model);
+            System.out.println("RAM: " + ram + " GB");
+            System.out.println("Storage: " + storage + " GB");
+            System.out.println("Price: PHP " + price);
+            
+            scanner.close();
+        }
+    }
+}
