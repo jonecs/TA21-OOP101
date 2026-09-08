@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+
+public class Problem3 {
+    //Orcine, Joneca
+   public static void main(String[] args) {
+       try (Scanner scanner = new Scanner(System.in)) {
+           System.out.print("Enter brand: ");
+           String brand = scanner.nextLine();
+           
+           System.out.print("Enter model: ");
+           String model = scanner.nextLine();
+           
+           System.out.print("Enter plate number: ");
+           String plateNumber = scanner.nextLine();
+           
+           System.out.print("Enter manufacturing year: ");
+           int year = scanner.nextInt();
+           
+           System.out.print("Enter engine displacement: ");
+           double displacement = scanner.nextDouble();
+           
+           System.out.println("==============================");
+           System.out.println("VEHICLE INFORMATION RECORD");
+           System.out.println("==============================");
+           System.out.println("Brand: " + brand);
+           System.out.println("Model: " + model);
+           System.out.println("Plate: " + plateNumber);
+           System.out.println("Year: " + year);
+           System.out.println("Engine: " + displacement + " L");
+           
+           scanner.close();
+       }
+   }
+}
