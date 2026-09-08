@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+
+public class Problem2 {
+    //Orcine, Joneca
+    public static void main(String[] args) {
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.print("Enter food item: ");
+            String foodItem = scanner.nextLine();
+            
+            System.out.print("Enter category: ");
+            String category = scanner.nextLine();
+            
+            System.out.print("Enter price: ");
+            double price = scanner.nextDouble();
+            
+            System.out.print("Enter serving size: ");
+            int servingSize = scanner.nextInt();
+            
+            System.out.println("==============================");
+            System.out.println("MENU ITEM RECORD");
+            System.out.println("==============================");
+            System.out.println("Item: " + foodItem);
+            System.out.println("Category: " + category);
+            System.out.println("Price: PHP " + price);
+            System.out.println("Serving Size: " + servingSize);
+            
+            scanner.close();
+        }
+    }
+}
