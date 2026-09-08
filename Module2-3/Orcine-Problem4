@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+
+public class Problem4 {
+    //Orcine, Joneca
+    public static void main(String[] args) {
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.print("Enter guest name: ");
+            String guestName = scanner.nextLine();
+            
+            System.out.print("Enter room number: ");
+            int roomNumber = scanner.nextInt();
+            
+            System.out.print("Enter number of nights: ");
+            int nights = scanner.nextInt();
+            
+            System.out.print("Enter room rate: ");
+            double roomRate = scanner.nextDouble();
+            
+            System.out.println("=========================");
+            System.out.println("HOTEL RECORD");
+            System.out.println("=========================");
+            System.out.println("Guest: " + guestName);
+            System.out.println("Room: " + roomNumber);
+            System.out.println("Nights: " + nights);
+            System.out.println("Room Rate: PHP " + roomRate);
+            
+            scanner.close();
+        }
+    }       
+}
